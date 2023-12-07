@@ -1,0 +1,109 @@
+'Lab05'
+ /** Shows the interactions of the created character.
+  *  effects: The characters created have changed.
+  */
+
+Methods of Class 'RPGCharacter' and Subclasses (WarriorCH, MageCH, AssassinCH, ArcherCH):
+
+'atk'
+    /** Character attacks.
+     *  effects: Print "NameCharacter : Attack!!"
+     */
+
+'def'
+    /** Characters take defense.
+     *  effects: Print "NameCharacter : Defends!!"
+     */
+
+'useSpecialAbility'
+    /** Characters use specialAbility.
+     *  effects: Print "NameCharacter : Uses a SpecialAbility!!"
+     */
+'useItem'
+    /** Characters choose to use items.
+     *  effects: Print "NameCharacter : Uses an item!"
+     */
+
+And Subclasses of 'RPGCharacter' have their own special methods:
+'performSpecialAbility'
+    /** Characters use specialAbility only Warrior Class.
+     *  requires: You must choose a warrior class only.
+     *  effects:  Print "NameCharacter : It's my time. Ascension!!!"
+     */
+
+'castSpell'
+    /** Characters use specialAbility only Mage Class.
+     *  requires: You must choose a mage class only.
+     *  effects:  Print "NameCharacter : Ice Age!!!"
+     */
+
+'invisibility'
+    /** Characters use specialAbility only  Assassin Class.
+     *  requires: You must choose an assassin class only.
+     *  effects:  Print "NameCharacter : You can see me? Yam Kra mom !!!"
+     */
+
+'heavyShot'
+    /** Characters use specialAbility only Archer Class.
+     *  requires: You must choose an archer class only.
+     *  effects:  Print "NameCharacter : Taek Nueng Suai Pee Suai!!!"
+     */
+
+
+Methods of Class 'RPGAccessory' and Subclasses (HeadAcc, BodyAcc, GauntletsAcc, BootsAcc, RingAcc):
+
+'equip'
+    /** Characters equip equipment.
+     *  effects: Print "accessory equipped!"
+     */
+
+'unequip'
+    /** Characters unequipped equipment
+     *  effects: Print "accessory unequipped!"
+     */
+
+'information'
+    /** Show details of accessory.
+     *  requires: Choose 1 or 2 numbers.
+     *  return:   Show details of the number you selected.
+     *  effects:  Print details of the first accessory, if Choose 1.
+     *  effects:  Print details of the second accessory, if Choose 2.
+     */
+'drop'
+    /** Characters drop accessories.
+     *  effects: Print "accessory dropped!"
+     */
+
+And Subclasses of 'RPGAccessory' have their own special methods:
+
+'increaseCriticalRate'
+    /** Characters get buff when wearing Head.
+     *  requires: Must choose to wear Head.
+     *  effects:  Print "Buff: Increases critical rate by 30%"
+     */
+
+'increasesArmorAndHP'
+    /** Characters get buff when wearing Body.
+     *  requires: Must choose to wear Body.
+     *  effects:  Print "Buff: Increases Armor+30 and HP+30"
+     */
+
+'attackSpeed'
+    /** Characters get buff when wearing Gauntlets.
+     *  requires: Must choose to wear Gauntlets.
+     *  effects:  Print "Buff: Increases Attack Speed by 20%"
+     */
+
+'runSpeed'
+    /** Characters get buff when wearing Boots.
+     *  requires: Must choose to wear Boots.
+     *  effects:  Print "Buff: Increases runSpeed by 35%"
+     */
+
+'vampire'
+    /** Characters get buff when wearing Rings.
+     *  requires: Must choose to wear Rings.
+     *  effects:  Print "Buff: Has a 100% hit rate, and will drain 25% of a target's HP"
+     */
+
+

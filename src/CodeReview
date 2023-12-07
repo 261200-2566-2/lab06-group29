@@ -1,0 +1,113 @@
+rule #1:
+
+                System.out.println("Choose a character a class:");
+                System.out.println("1. Warrior");
+                System.out.println("2. Mage");
+                System.out.println("3. Assassin");
+                System.out.println("4. Archer");
+                System.out.print("Enter your number class : ");
+                int classChoice = scanner.nextInt();
+
+           // มีการใช้ตัวแปรที่นิยามเป็นชื่อ classChoice มารับค่าคงที่จาก input
+
+
+
+rule #2:
+
+                    public void atk() {
+                        System.out.println( name +": Attack!!");
+                    }
+                    public void def() {
+                        System.out.println(name+": Defends!!");
+                    }
+                    public void useItem() {
+                        System.out.println( name+": Uses an item! ");
+                    }
+                    public void useSpecialAbility() {
+                        System.out.println(name+ ": Uses a SpecialAbility!!");
+                    }
+
+           // code ในส่วนนี้ควรรวมไว้ใน class เดียวเเล้วเรียกใช้เพียง class เดียวแทนที่จะเรียกใช้ซ้ำๆในทุกๆ subclass
+
+rule #3:
+
+                    selectedCH.atk();  // โจมตี
+                    selectedCH.def();  // ป้องกัน
+                    selectedCH.useItem();  // ใช้ไอเทม
+                    selectedCH.useSpecialAbility(); //ใช้ skill ทั่วไป
+
+                    // ใช้ skill เฉพาะ class ที่เลือก
+                    //https://chat.openai.com/ -----------
+                    if(selectedCH instanceof Warrior){
+                        ((Warrior) selectedCH).performSpecialAbility();
+                    }else if(selectedCH instanceof Mage){
+                        ((Mage) selectedCH).castSpell();
+                    }else if (selectedCH instanceof Assassin){
+                        ((Assassin)selectedCH).invisibility();
+                    }else {
+                        ((Archer)selectedCH).heavyShot();
+                    }
+                    System.out.println("1.?????? ");    //  <-- ทุก Accessory จะมีให้สุ่มเลือก
+                    System.out.println("2.?????? ");
+
+
+              // comment ในส่วนแนะนำ code คร่าวๆและส่วนให้ credit เพียงเท่านั้น
+
+
+rule #4:
+
+        do {
+                System.out.println("Choose a character a class:");
+                System.out.println("1. Warrior");
+                System.out.println("2. Mage");
+                System.out.println("3. Assassin");
+                System.out.println("4. Archer");
+                System.out.print("Enter your number class : ");
+                int classChoice = scanner.nextInt();
+                switch (classChoice) {
+                    case 1:
+                        selectedCH = new WarriorCH(playerName);
+                        NClass = "Warrior";
+                        break;
+                    case 2:
+                        selectedCH = new MageCH(playerName);
+                        NClass = "Mage";
+                        break;
+                    case 3:
+                        selectedCH = new AssassinCH(playerName);
+                        NClass = "Assassin";
+                        break;
+                    case 4:
+                        selectedCH = new ArcherCH(playerName);
+                        NClass = "Archer";
+                        break;
+                    default:
+                        System.out.println("Invalid choice or Enter numbers provided.");
+                }
+                }while(selectedCH==null);
+
+            //  ในส่วนนี้มีการ check input ที่ไม่ตรงเงื่อนไขอยู่ด้วย
+
+
+rule #5:
+
+
+                 System.out.print("Enter your number class : ");
+                 int classChoice = scanner.nextInt();
+
+                 System.out.print("Enter your number Accessory : ");
+                 int accChoice = scanner.nextInt();
+
+            // มีการแยกตัวแปรออกอย่างชัดเจน 1 หน้าที่ 1 ตัวแปร
+
+
+
+rule #6:
+
+
+               String NClass = null;
+               String NAcc = null;
+               int InChoice = scanner.nextInt();
+
+           //  ควรใช้ชื่อตัวแปรห้เข้าใจกว่านี้เช่น NClass => NameClass , NAcc => NameAccessory , InChoice => InforChoice
+
